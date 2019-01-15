@@ -1,2 +1,7 @@
-var a = 1, b = 2, c = "Three", d = 4, e = '5'
-console.log(b + parseInt(e))
+function outerFunction() {
+  var innerVariable = "I\'m sort of a secret";
+  return function innerScope() {
+    var inaccessibly = "Nothing can touch me";
+    return innerVariable;
+  }
+}
